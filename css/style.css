@@ -19,6 +19,27 @@ a {
     
 }
 
+@keyframes tooltip {
+    from {
+        opacity: 0%;
+    }
+
+    to {
+        opacity: 100%;
+    }
+}
+
+@keyframes card {
+    from {
+        opacity: 0%;
+    }
+
+    to {
+        opacity: 100%;
+    }
+}
+
+
 .container-padding {
     padding: var(--main-padding);
 }
@@ -64,7 +85,7 @@ a {
 .header>.main>img {
     position: absolute;
     width: 40%;
-    min-width: 350px;
+    min-width: 315px;
     margin-left: 40%;
     margin-bottom: 10%;
 }
@@ -231,7 +252,7 @@ ul {
 .block-number {
     position: absolute;
     right: 15%;
-    bottom: -50px;
+    bottom: -60px;
     font-size: 10rem;
     font-weight: 700;
     line-height: 215.21px;
@@ -556,7 +577,8 @@ ul {
 
 .slide img {
     padding-right: 21px;
-    /* width: 100%; */
+    min-width: 150px;
+    max-width: 600px;
 }
 
 /*Стрелки*/
@@ -791,21 +813,47 @@ ul {
 }
 
 @media screen and (max-width: 500px) {
-    .slider .slide img {
-        /* padding: 0; */
+    .main_card {
+        width: 100%;
+        height: auto;
+    }
+    .header .main_title {
+        font-size: 2rem;
+    }
+    .header > .main {
+        height: auto;
+    }
+
+    .main .button {
+        display: block;
+        padding: 10px;
+        width: 100%;
     }
 }
 
 @media screen and (max-width: 492px) {
     .inform {
-        padding: 48px 0 48px 48px;
+        padding: 20px 0 20px 20px;
     }
 
     .inform .card {
-        padding: 20px 70px;
+        padding: 15px 35px;
     }
 
     .inform .card_title > * {
         width: 100%;
+    }
+
+    .right_cards .recommend {
+        height: auto;
+    }
+
+    .footer .footer_title {
+        font-size: 1.5rem;
+    }
+
+    .footer .btn {
+        display: block;
+        padding: 10px;
     }
 }
