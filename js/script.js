@@ -4,7 +4,7 @@ $(document).ready(function(){
 		infinite: false,
 		adaptiveHeight: true,
 		variableWidth: true,
-		slidesToShow: 2
+		slidesToShow: 1
 	});
 	function hideSliderArrows() {
 	    if ($(window).width() < 768) {
